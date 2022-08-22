@@ -42,13 +42,13 @@
         app:layout_constraintVertical_bias="0.465" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/password_login"
         android:layout_width="335dp"
         android:layout_height="54dp"
         android:background="@color/hint"
         android:ems="10"
         android:hint="  Enter Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:textColor="#FFFFFF"
         android:textColorHint="#3CF3EFEF"
         app:layout_constraintBottom_toBottomOf="parent"

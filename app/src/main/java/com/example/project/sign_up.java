@@ -30,26 +30,29 @@ public class sign_up extends AppCompatActivity {
 
     public void save_data(View view) {
         databasesqlite dt =new databasesqlite(this);
-        String gender=null;
+        String gender="";
 
+        EditText name =(EditText) findViewById(R.id.name_signup);
+        EditText phone =(EditText) findViewById(R.id.phone_signup);
+        EditText district =(EditText) findViewById(R.id.District_signup);
+        EditText email =(EditText) findViewById(R.id.email_signup);
+        EditText password =(EditText) findViewById(R.id.password_signup);
 
-        EditText t1 =(EditText) findViewById(R.id.fullname);
-        EditText t2 =(EditText) findViewById(R.id.phone);
-        EditText t3 =(EditText) findViewById(R.id.District);
-        EditText t4 =(EditText) findViewById(R.id.Email);
-        EditText t5 =(EditText) findViewById(R.id.password);
+        RadioButton male =(RadioButton) findViewById(R.id.r_b_male);
+        RadioButton female =(RadioButton) findViewById(R.id.r_b_female);
 
-        RadioButton t6 =(RadioButton) findViewById(R.id.r_b_male);
-        RadioButton t7 =(RadioButton) findViewById(R.id.r_b_female);
-
-        if (t6.isChecked())
-            gender = t6.getText().toString();
-        else if (t7.isChecked())
-            gender = t7.getText().toString();
+        if (male.isChecked())
+            gender = male.getText().toString();
+        else if (female.isChecked())
+            gender = female.getText().toString();
 
         Toast.makeText(this, "hi", Toast.LENGTH_LONG).show();
 
-        String result = dt.insert_data(t1.getText().toString(),Integer.parseInt(t2.getText().toString()),t3.getText().toString(),t4.getText().toString(),t5.getText().toString(),gender);
+        String result = dt.insert_data(name.getText().toString(),
+                Integer.parseInt(phone.getText().toString()),
+                district.getText().toString(),
+                email.getText().toString(),
+                password.getText().toString(),gender);
         Toast.makeText(this, result, Toast.LENGTH_LONG).show();
 
     }
