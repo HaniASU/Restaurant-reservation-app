@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -31,7 +32,6 @@ public class databasesqlite extends SQLiteOpenHelper {
 
     public String insert_data(String name, int phone , String dis , String email, String pass, String gender)
     {
-
         SQLiteDatabase Sdata =this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("Name",name);
@@ -48,17 +48,21 @@ public class databasesqlite extends SQLiteOpenHelper {
 
     }
 
-    public ArrayList<user> get_data()
+    public Boolean check_data(EditText email, EditText pass)
     {
-        ArrayList<user> arrayList =new ArrayList<user>();
         SQLiteDatabase database = this.getReadableDatabase();
-        Cursor cu = database.rawQuery("select * from user",null);
-        cu.moveToFirst();
-        while (cu.isAfterLast() == false)
-        {
-            arrayList.add(new user(cu.getInt(0),cu.getString(1),cu.getInt(2),cu.getString(3),cu.getString(4), cu.getString(5), cu.getString(6)));
-            cu.moveToNext();
+        Cursor cu = database.rawQuery("SELECT * FROM user WHERE Email = ? and Password = ?", new String[]{email.getText().toString(),pass.getText().toString()});
+        if(cu.moveToFirst()) {
+            user_info.user_id = cu.getInt(0);
+            user_info.user_name = cu.getString(1);
+            user_info.user_phone = cu.getInt(2);
+            user_info.user_district = cu.getString(3);
+            user_info.user_email = cu.getString(4);
+            user_info.user_password = cu.getString(5);
+            user_info.user_gender = cu.getString(6);
+            return true;
         }
-        return arrayList;
+
+        return false;
     }
 }

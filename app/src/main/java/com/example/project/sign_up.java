@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.project.data.databasesqlite;
@@ -46,14 +45,28 @@ public class sign_up extends AppCompatActivity {
         else if (female.isChecked())
             gender = female.getText().toString();
 
-        Toast.makeText(this, "hi", Toast.LENGTH_LONG).show();
+        String Name = name.getText().toString();
+        String Phone = phone.getText().toString();
+        String District = district.getText().toString();
+        String Email = email.getText().toString();
+        String Password = password.getText().toString();
 
-        String result = dt.insert_data(name.getText().toString(),
-                Integer.parseInt(phone.getText().toString()),
-                district.getText().toString(),
-                email.getText().toString(),
-                password.getText().toString(),gender);
-        Toast.makeText(this, result, Toast.LENGTH_LONG).show();
+        if (Name.isEmpty()|| Phone.isEmpty() ||Password.isEmpty() || District.isEmpty() || Email.isEmpty() || gender =="")
+        {
+            Toast.makeText(this, "Invaild data", Toast.LENGTH_LONG).show();
+        }
+        else {
+            String result = dt.insert_data(Name, Integer.parseInt(Phone), District, Email, Password, gender);
+            Toast.makeText(this, result, Toast.LENGTH_LONG).show();
 
+            name.getText().clear();
+            phone.getText().clear();
+            district.getText().clear();
+            email.getText().clear();
+            password.getText().clear();
+            male.setChecked(false);
+            female.setChecked(false);
+        }
     }
+
 }

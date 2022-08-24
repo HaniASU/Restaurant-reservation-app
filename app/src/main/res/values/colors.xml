@@ -10,6 +10,8 @@
     <color name="background">#151120</color>
     <color name="other">#0df6e3</color>
     <color name="hint">#39304d</color>
+    <color name="button">#a17dff</color>
+
 
 
 </resources>

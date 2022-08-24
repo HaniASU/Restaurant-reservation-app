@@ -3,8 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/background.xml" value="0.284" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_email_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_location_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_lock_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_name_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_phone_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_email.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_email_foucs.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_iphone.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_iphone_foucs.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.287" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_location.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_location_foucs.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_lock.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_lock_fouc.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_name.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_name_foucs.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/layout/activity_sign_in.xml" value="0.25625" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/layout/activity_sign_up.xml" value="0.2989583333333333" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.287" />
       </map>
