@@ -4,59 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".book">
 
     <TextView
         android:id="@+id/bookpage_title"
-        android:layout_width="182dp"
-        android:layout_height="62dp"
-        android:text="Booking"
+        android:layout_width="295dp"
+        android:layout_height="41dp"
+        android:text="Booking Requirments"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="48sp"
+        android:textColor="@color/other"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.413"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144" />
+        app:layout_constraintVertical_bias="0.557" />
 
     <EditText
         android:id="@+id/num_of_persons"
-        android:layout_width="310dp"
-        android:layout_height="70dp"
-        android:background="@drawable/background"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
         android:drawableLeft="@drawable/custom_name_icon"
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Number Of Persons"
         android:inputType="number"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.402"
+        app:layout_constraintVertical_bias="0.636"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/date_of_booking"
-        android:layout_width="310dp"
-        android:layout_height="70dp"
-        android:background="@drawable/background"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
         android:drawableLeft="@android:drawable/ic_menu_month"
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Date Of Booking"
         android:inputType="date"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.597"
+        app:layout_constraintVertical_bias="0.726"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <Button
@@ -82,10 +84,18 @@
         android:onClick="go_to_user"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.055"
+        app:layout_constraintVertical_bias="0.853"
         app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="431dp"
+        android:layout_height="421dp"
+        app:srcCompat="@drawable/book_image"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="-59dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
