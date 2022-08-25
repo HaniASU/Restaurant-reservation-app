@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/app/src/main/res/layout/activity_book.xml" value="0.25" />
+        <entry key="..\:/Android/app/src/main/res/layout/activity_main.xml" value="0.19202898550724637" />
+        <entry key="..\:/Android/app/src/main/res/layout/activity_sign_in.xml" value="0.19202898550724637" />
         <entry key="..\:/Users/HP Zbook/Documents/GitHub/Android/app/src/main/res/layout/activity_main.xml" value="0.2234375" />
         <entry key="..\:/Users/HP Zbook/Documents/GitHub/Android/app/src/main/res/layout/activity_sign_in.xml" value="0.2234375" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/background.xml" value="0.284" />
