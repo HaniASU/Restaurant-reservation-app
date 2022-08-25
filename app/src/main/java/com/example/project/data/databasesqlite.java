@@ -65,13 +65,7 @@ public class databasesqlite extends SQLiteOpenHelper {
         SQLiteDatabase database = this.getReadableDatabase();
         Cursor cu = database.rawQuery("SELECT * FROM user WHERE Email = ? and Password = ?", new String[]{email.getText().toString(),pass.getText().toString()});
         if(cu.moveToFirst()) {
-            user_info.user_id = cu.getInt(0);
-            user_info.user_name = cu.getString(1);
-            user_info.user_phone = cu.getInt(2);
-            user_info.user_district = cu.getString(3);
-            user_info.user_email = cu.getString(4);
-            user_info.user_password = cu.getString(5);
-            user_info.user_gender = cu.getString(6);
+            user_info.user = cu;
             return true;
         }
 

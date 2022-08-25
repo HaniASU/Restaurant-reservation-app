@@ -4,63 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_backgroundall"
-    android:hapticFeedbackEnabled="false"
-    tools:context=".sign_up">
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/background"
-        android:onClick="go_to_signin"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057"
-        app:srcCompat="@android:drawable/ic_menu_revert"
-        tools:ignore="OnClick"
-        app:tint="@color/honor" />
+    android:background="@color/background"
+    tools:context=".profile">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Creat Account"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
+        android:id="@+id/textView7"
+        android:layout_width="102dp"
+        android:layout_height="45dp"
+        android:text="Profile"
+        android:textColor="@color/honor"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Please fill the input blow here"
-        android:textColor="#70FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.289"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintVertical_bias="0.104" />
 
     <EditText
-        android:id="@+id/name_signup"
+        android:id="@+id/name_update"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/background"
         android:drawableStart="@drawable/custom_name_icon"
         android:drawablePadding="5dp"
         android:ems="10"
-        android:hint="Full Name"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -69,20 +38,40 @@
         android:textColorLink="#a17dff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225" />
+        app:layout_constraintVertical_bias="0.277"
+        android:drawableLeft="@drawable/custom_name_icon" />
 
     <EditText
-        android:id="@+id/phone_signup"
+        android:id="@+id/id_update"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColorHighlight="#a17dff"
+        android:textColorHint="#70FFFFFF"
+        android:textColorLink="#a17dff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <EditText
+        android:id="@+id/phone_update"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/background"
         android:drawableStart="@drawable/custom_phone_icon"
         android:drawablePadding="5dp"
         android:ems="10"
-        android:hint="Phone Number"
         android:inputType="phone"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -91,63 +80,21 @@
         android:textColorLink="#a17dff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315" />
+        app:layout_constraintVertical_bias="0.372"
+        android:drawableLeft="@drawable/custom_phone_icon" />
 
     <EditText
-        android:id="@+id/email_signup"
+        android:id="@+id/district_update"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:background="@drawable/background"
-        android:drawableStart="@drawable/custom_email_icon"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:hint="E-mail"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="10dp"
-        android:paddingRight="20dp"
-        android:textColorHighlight="#a17dff"
-        android:textColorHint="#6BFFFFFF"
-        android:textColorLink="#a17dff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <EditText
-        android:id="@+id/password_signup"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:background="@drawable/background"
-        android:drawableStart="@drawable/custom_lock_icon"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:paddingLeft="10dp"
-        android:paddingRight="20dp"
-        android:textColorHighlight="#a17dff"
-        android:textColorHint="#72FFFFFF"
-        android:textColorLink="#a17dff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59" />
-
-    <EditText
-        android:id="@+id/District_signup"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/background"
         android:drawableStart="@drawable/custom_location_icon"
         android:drawablePadding="5dp"
         android:ems="10"
-        android:hint="District"
         android:inputType="text"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -156,40 +103,73 @@
         android:textColorLink="#a17dff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintVertical_bias="0.443"
+        android:drawableLeft="@drawable/custom_location_icon" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="131dp"
-        android:layout_height="57dp"
-        android:onClick="save_data"
-        android:text="Save"
-        android:textColor="@color/background"
-        android:textSize="18dp"
-        app:backgroundTint="@color/honor"
+    <EditText
+        android:id="@+id/email_update"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:textColorHighlight="#a17dff"
+        android:textColorHint="#6BFFFFFF"
+        android:textColorLink="#a17dff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
+        app:layout_constraintVertical_bias="0.535"
+        android:drawableLeft="@drawable/custom_email_icon" />
+
+    <EditText
+        android:id="@+id/password_update"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/background"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:textColorHighlight="#a17dff"
+        android:textColorHint="#72FFFFFF"
+        android:textColorLink="#a17dff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624"
+        android:drawableLeft="@drawable/custom_lock_icon" />
 
     <RadioGroup
         android:id="@+id/gender_update"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/background"
         android:orientation="horizontal"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687">
+        app:layout_constraintVertical_bias="0.72">
 
         <RadioButton
             android:id="@+id/r_b_mal_update"
@@ -222,5 +202,54 @@
             app:buttonTint="@color/honor" />
 
     </RadioGroup>
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="220dp"
+        android:layout_height="57dp"
+        android:onClick="update_data"
+        android:text="update"
+        android:textColor="@color/background"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/honor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.862" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:onClick="to_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:tint="@color/honor"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/Remove"
+        android:layout_width="220dp"
+        android:layout_height="57dp"
+        android:text="Remove Account"
+        android:textColor="@color/background"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/honor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,8 +37,8 @@ public class sign_up extends AppCompatActivity {
         EditText email =(EditText) findViewById(R.id.email_signup);
         EditText password =(EditText) findViewById(R.id.password_signup);
 
-        RadioButton male =(RadioButton) findViewById(R.id.r_b_male);
-        RadioButton female =(RadioButton) findViewById(R.id.r_b_female);
+        RadioButton male =(RadioButton) findViewById(R.id.r_b_mal_update);
+        RadioButton female =(RadioButton) findViewById(R.id.r_b_fmal_update);
 
         if (male.isChecked())
             gender = male.getText().toString();
