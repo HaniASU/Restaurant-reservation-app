@@ -48,17 +48,18 @@ public class databasesqlite extends SQLiteOpenHelper {
 
     public String insert_booking_info(int numberofpersons,String dateofbooking)
     {
-        SQLiteDatabase data =this.getWritableDatabase();
+        SQLiteDatabase bdata =this.getWritableDatabase();
         ContentValues content = new ContentValues();
         content.put("NumberOfPersons",numberofpersons);
         content.put("DateOfBooking",dateofbooking);
-        long c = data.insert("booking_info",null,content);
-        if (c == -1)
-            return "Invaild Data";
-        else
-            return "Book Successfully" +
-                    "And" +
-                    "Your Booking Number is " + "";
+        long c = bdata.insert("booking_info",null,content);
+
+        if (c == -1) {
+            return "Invaild data";
+        }
+        else {
+            return "Data Saved";
+        }
     }
 
     public Boolean check_data(EditText email, EditText pass)

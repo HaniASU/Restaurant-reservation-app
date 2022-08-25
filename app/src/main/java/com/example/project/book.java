@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.project.data.databasesqlite;
+import com.example.project.data.user_info;
 
 public class book extends AppCompatActivity {
 
@@ -36,14 +37,14 @@ public class book extends AppCompatActivity {
         String NumberOfPersons = numberofpersons.getText().toString();
         String DateOfBooking = dateofbooking.getText().toString();
 
-        if ( NumberOfPersons.isEmpty()|| DateOfBooking.isEmpty() )
+        if ( NumberOfPersons.isEmpty() ||DateOfBooking.isEmpty() )
         {
             Toast.makeText(this, " Invaild data", Toast.LENGTH_LONG).show();
         }
         else {
-            String result = b.insert_booking_info(Integer.parseInt(NumberOfPersons) ,DateOfBooking);
-            Toast.makeText(this, result, Toast.LENGTH_LONG).show();
-
+            String final_res = b.insert_booking_info(Integer.parseInt(NumberOfPersons) ,DateOfBooking);
+            Toast.makeText(this, "Book Successfully\n" + "And\n" + "Your Booking Number is " , Toast.LENGTH_LONG).show();
+//             + user_info.user.getString(0)
             numberofpersons.getText().clear();
             dateofbooking.getText().clear();
 

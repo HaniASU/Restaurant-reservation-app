@@ -25,8 +25,8 @@
 
     <EditText
         android:id="@+id/num_of_persons"
-        android:layout_width="315dp"
-        android:layout_height="40dp"
+        android:layout_width="355dp"
+        android:layout_height="45dp"
         android:background="@color/white"
         android:drawableLeft="@drawable/custom_name_icon"
         android:drawablePadding="10dp"
@@ -44,13 +44,13 @@
 
     <EditText
         android:id="@+id/date_of_booking"
-        android:layout_width="315dp"
-        android:layout_height="40dp"
+        android:layout_width="355dp"
+        android:layout_height="45dp"
         android:background="@color/white"
         android:drawableLeft="@android:drawable/ic_menu_month"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Date Of Booking"
+        android:hint="Date Of Booking Example : dd/mm/yy"
         android:inputType="date"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -88,7 +88,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.462"
-        app:srcCompat="@android:drawable/ic_menu_revert" />
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView2"
