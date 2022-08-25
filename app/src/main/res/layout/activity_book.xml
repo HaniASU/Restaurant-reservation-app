@@ -7,7 +7,7 @@
     tools:context=".book">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/bookpage_title"
         android:layout_width="182dp"
         android:layout_height="62dp"
         android:text="Booking"
@@ -26,7 +26,7 @@
         android:layout_width="310dp"
         android:layout_height="70dp"
         android:background="@drawable/background"
-        android:drawableStart="@drawable/custom_name_icon"
+        android:drawableLeft="@drawable/custom_name_icon"
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Number Of Persons"
@@ -45,7 +45,7 @@
         android:layout_width="310dp"
         android:layout_height="70dp"
         android:background="@drawable/background"
-        android:drawableStart="@android:drawable/ic_menu_month"
+        android:drawableLeft="@android:drawable/ic_menu_month"
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Date Of Booking"
@@ -56,11 +56,11 @@
         app:layout_constraintHorizontal_bias="0.257"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
+        app:layout_constraintVertical_bias="0.521"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/book_button"
         android:layout_width="168dp"
         android:layout_height="77dp"
         android:text="Book"
