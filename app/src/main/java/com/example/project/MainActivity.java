@@ -13,7 +13,7 @@ import android.widget.RadioButton;
 import com.example.project.data.user_info;
 
 public class MainActivity extends AppCompatActivity {
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
