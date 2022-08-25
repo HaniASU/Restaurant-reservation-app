@@ -20,7 +20,7 @@ public class book extends AppCompatActivity {
         setContentView(R.layout.activity_book);
     }
 
-    
+
 
     public void save_info(View view)
     {

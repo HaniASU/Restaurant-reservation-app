@@ -24,6 +24,7 @@ public class databasesqlite extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase Database, int i, int i1) {
         Database.execSQL("DROP TABLE IF EXISTS user");
+        Database.execSQL("DROP TABLE IF EXISTS booking_info");
         onCreate(Database);
 
     }
