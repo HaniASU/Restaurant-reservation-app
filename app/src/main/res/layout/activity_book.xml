@@ -65,6 +65,7 @@
         android:layout_height="77dp"
         android:text="Book"
         android:textSize="34sp"
+        android:onClick="save_info"
         app:backgroundTint="@color/honor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
