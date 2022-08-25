@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@drawable/ic_backgroundall"
     android:hapticFeedbackEnabled="false"
     tools:context=".sign_up">
 
@@ -14,13 +14,13 @@
         android:layout_height="wrap_content"
         android:background="@color/background"
         android:onClick="go_to_signin"
-        android:tint="#A17DFF"
+        android:tint="@color/honor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintVertical_bias="0.057"
         app:srcCompat="@android:drawable/ic_menu_revert"
         tools:ignore="OnClick" />
 
@@ -169,7 +169,7 @@
         android:text="Save"
         android:textColor="@color/background"
         android:textSize="18dp"
-        app:backgroundTint="#a17dff"
+        app:backgroundTint="@color/honor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
@@ -202,10 +202,10 @@
             android:layout_marginRight="10dp"
             android:text="Male"
             android:textColor="#6AFFFFFF"
-            android:textColorHighlight="#a17dff"
-            android:textColorLink="#a17dff"
+            android:textColorHighlight="@color/honor"
+            android:textColorLink="@color/honor"
             android:textSize="18sp"
-            app:buttonTint="#a17dff" />
+            app:buttonTint="@color/honor" />
 
         <RadioButton
             android:id="@+id/r_b_female"
@@ -217,10 +217,10 @@
             android:layout_marginRight="20dp"
             android:text="Female"
             android:textColor="#6AFFFFFF"
-            android:textColorHighlight="#a17dff"
-            android:textColorLink="#a17dff"
+            android:textColorHighlight="@color/honor"
+            android:textColorLink="@color/honor"
             android:textSize="18sp"
-            app:buttonTint="#a17dff" />
+            app:buttonTint="@color/honor" />
 
     </RadioGroup>
 

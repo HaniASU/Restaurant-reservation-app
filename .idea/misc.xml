@@ -3,17 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/app/src/main/res/layout/activity_book.xml" value="0.25" />
-        <entry key="..\:/Android/app/src/main/res/layout/activity_main.xml" value="0.19202898550724637" />
-        <entry key="..\:/Android/app/src/main/res/layout/activity_sign_in.xml" value="0.19202898550724637" />
-        <entry key="..\:/Users/HP Zbook/Documents/GitHub/Android/app/src/main/res/layout/activity_main.xml" value="0.2234375" />
-        <entry key="..\:/Users/HP Zbook/Documents/GitHub/Android/app/src/main/res/layout/activity_sign_in.xml" value="0.2234375" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/background.xml" value="0.284" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_email_icon.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_location_icon.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_lock_icon.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_name_icon.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_phone_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_baseline_child_care_24.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_email.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_email_foucs.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_iphone.xml" value="0.1" />
