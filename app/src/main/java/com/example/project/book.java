@@ -15,11 +15,11 @@ public class book extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_book);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_book);
     }
+
     public void save_info(View view)
     {
         databasesqlite b= new databasesqlite(this);
