@@ -64,10 +64,10 @@
     <Button
         android:id="@+id/book_button"
         android:layout_width="168dp"
-        android:layout_height="77dp"
+        android:layout_height="50dp"
         android:onClick="save_info"
         android:text="Book"
-        android:textSize="34sp"
+        android:textSize="24sp"
         app:backgroundTint="@color/honor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,18 +84,20 @@
         android:onClick="go_to_user"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.853"
+        app:layout_constraintVertical_bias="0.462"
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="431dp"
         android:layout_height="421dp"
-        app:srcCompat="@drawable/book_image"
-        tools:layout_editor_absoluteX="-10dp"
-        tools:layout_editor_absoluteY="-59dp" />
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/bookpage_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/book_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
