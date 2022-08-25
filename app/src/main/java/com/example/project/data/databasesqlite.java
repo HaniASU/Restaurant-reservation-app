@@ -17,7 +17,7 @@ public class databasesqlite extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase Database) {
         Database.execSQL("create table user (Id INTEGER primary key AUTOINCREMENT ,Name TEXT ,Phone INTEGER, District TEXT ,Email TEXT,Password TEXT ,Gender TEXT )");
-        Database.execSQL("create table booking_info (booking_number INTEGER primary key AUTOINCREMENT,NumberOfPersons INTEGER,DateOfBooking Date)");
+        Database.execSQL("create table booking_info (booking_number INTEGER primary key AUTOINCREMENT,NumberOfPersons INTEGER,DateOfBooking TEXT)");
 
     }
 
@@ -56,7 +56,9 @@ public class databasesqlite extends SQLiteOpenHelper {
         if (c == -1)
             return "Invaild Data";
         else
-            return "Data edit";
+            return "Book Successfully" +
+                    "And" +
+                    "Your Booking Number is " + "";
     }
 
     public Boolean check_data(EditText email, EditText pass)
