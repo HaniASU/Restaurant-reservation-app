@@ -44,7 +44,6 @@ public class databasesqlite extends SQLiteOpenHelper {
             return "Invaild data";
         else
             return "Data Saved";
-
     }
 
     public String insert_booking_info(int numberofpersons,String dateofbooking)
@@ -68,7 +67,6 @@ public class databasesqlite extends SQLiteOpenHelper {
             user_info.user = cu;
             return true;
         }
-
         return false;
     }
 }

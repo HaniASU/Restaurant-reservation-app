@@ -32,4 +32,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, profile.class);
         startActivity(intent);
     }
+    public void to_booking(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, book.class);
+        startActivity(intent);
+    }
 }
