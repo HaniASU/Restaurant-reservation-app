@@ -32,7 +32,7 @@ public class book extends AppCompatActivity {
 
         if ( NumberOfPersons.isEmpty()|| DateOfBooking.isEmpty() )
         {
-            Toast.makeText(this, "Invaild data", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, " Invaild data", Toast.LENGTH_LONG).show();
         }
         else {
             String result = b.insert_booking_info(Integer.parseInt(NumberOfPersons) ,DateOfBooking);
