@@ -52,11 +52,11 @@ public class databasesqlite extends SQLiteOpenHelper {
         ContentValues content = new ContentValues();
         content.put("NumberOfPersons",numberofpersons);
         content.put("DateOfBooking",dateofbooking);
-        long c = content.insert("booking_info",null,content);
+        long c = data.insert("booking_info",null,content);
         if (c == -1)
-            return "Invaild data";
+            return "Invaild edit";
         else
-            return "Data Saved";
+            return "Data edit";
     }
 
     public Boolean check_data(EditText email, EditText pass)
