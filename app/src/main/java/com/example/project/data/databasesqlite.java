@@ -55,7 +55,7 @@ public class databasesqlite extends SQLiteOpenHelper {
         content.put("DateOfBooking",dateofbooking);
         long c = data.insert("booking_info",null,content);
         if (c == -1)
-            return "Invaild edit";
+            return "Invaild Data";
         else
             return "Data edit";
     }
