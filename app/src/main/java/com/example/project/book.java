@@ -33,17 +33,19 @@ public class book extends AppCompatActivity {
 
         EditText numberofpersons = (EditText) findViewById(R.id.num_of_persons);
         EditText dateofbooking = (EditText) findViewById(R.id.date_of_booking);
+        String UserId = user_info.user.getString(0);
 
         String NumberOfPersons = numberofpersons.getText().toString();
         String DateOfBooking = dateofbooking.getText().toString();
+
 
         if ( NumberOfPersons.isEmpty() ||DateOfBooking.isEmpty() )
         {
             Toast.makeText(this, " Invaild data", Toast.LENGTH_LONG).show();
         }
         else {
-            String final_res = b.insert_booking_info(Integer.parseInt(NumberOfPersons) ,DateOfBooking);
-            Toast.makeText(this, "Book Successfully\n" + "And\n" + "Your Booking Number is " , Toast.LENGTH_LONG).show();
+            String final_res = b.insert_booking_info(Integer.parseInt(NumberOfPersons) ,DateOfBooking ,Integer.parseInt(UserId));
+            Toast.makeText( this, "Book Successfully\n" + "And\n" + "Your Booking Number is " , Toast.LENGTH_LONG).show();
 //             + user_info.user.getString(0)
             numberofpersons.getText().clear();
             dateofbooking.getText().clear();

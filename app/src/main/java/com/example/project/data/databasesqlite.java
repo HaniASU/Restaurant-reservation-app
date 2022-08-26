@@ -17,7 +17,7 @@ public class databasesqlite extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase Database) {
         Database.execSQL("create table user (Id INTEGER primary key AUTOINCREMENT ,Name TEXT ,Phone INTEGER, District TEXT ,Email TEXT,Password TEXT ,Gender TEXT )");
-        Database.execSQL("create table booking_info (booking_number INTEGER primary key AUTOINCREMENT,NumberOfPersons INTEGER,DateOfBooking TEXT)");
+        Database.execSQL("create table booking_info (booking_number INTEGER primary key AUTOINCREMENT,NumberOfPersons INTEGER,DateOfBooking TEXT,UserId INTEGER)");
 
     }
 
@@ -46,12 +46,13 @@ public class databasesqlite extends SQLiteOpenHelper {
             return "Data Saved";
     }
 
-    public String insert_booking_info(int numberofpersons,String dateofbooking)
+    public String insert_booking_info(int numberofpersons, String dateofbooking, int userid)
     {
         SQLiteDatabase bdata =this.getWritableDatabase();
         ContentValues content = new ContentValues();
         content.put("NumberOfPersons",numberofpersons);
         content.put("DateOfBooking",dateofbooking);
+        content.put("UserId",userid);
         long c = bdata.insert("booking_info",null,content);
 
         if (c == -1) {
