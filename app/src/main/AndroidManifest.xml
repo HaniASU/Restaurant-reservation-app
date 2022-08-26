@@ -7,14 +7,18 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
         <activity
+<<<<<<< Updated upstream
             android:name=".display"
+=======
+            android:name=".Cancel"
+>>>>>>> Stashed changes
             android:exported="false" />
         <activity
             android:name=".book"

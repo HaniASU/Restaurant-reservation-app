@@ -3,12 +3,9 @@ package com.example.project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.widget.EditText;
-import android.widget.RadioButton;
 
 import com.example.project.data.user_info;
 
@@ -41,7 +38,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, book.class);
         startActivity(intent);
     }
+<<<<<<< Updated upstream
     public void to_cancel(View view) {
+=======
+    public void to_cancelling(View view)
+    {
+>>>>>>> Stashed changes
         Intent intent = new Intent(MainActivity.this, Cancel.class);
         startActivity(intent);
     }

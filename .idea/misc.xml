@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< Updated upstream
+=======
+        <entry key="..\:/Android/app/src/main/res/layout/activity_book.xml" value="0.20244565217391305" />
+        <entry key="..\:/Android/app/src/main/res/layout/activity_main.xml" value="0.20244565217391305" />
+        <entry key="..\:/Android/app/src/main/res/layout/activity_sign_in.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
+        <entry key="..\:/Users/HP Zbook/Documents/GitHub/Android/app/src/main/res/layout/activity_book.xml" value="0.2234375" />
+        <entry key="..\:/Users/HP Zbook/Documents/GitHub/Android/app/src/main/res/layout/activity_cancel.xml" value="0.2" />
+        <entry key="..\:/Users/HP Zbook/Documents/GitHub/Android/app/src/main/res/layout/activity_main.xml" value="0.2234375" />
+        <entry key="..\:/Users/HP Zbook/Documents/GitHub/Android/app/src/main/res/layout/activity_profile.xml" value="0.2234375" />
+        <entry key="..\:/Users/HP Zbook/Documents/GitHub/Android/app/src/main/res/layout/activity_sign_in.xml" value="0.2234375" />
+        <entry key="..\:/Users/HP Zbook/Documents/GitHub/Android/app/src/main/res/layout/cancel.xml" value="0.166796875" />
+        <entry key="..\:/Users/HP Zbook/Documents/GitHub/Android/app/src/main/res/layout/display.xml" value="0.2234375" />
+>>>>>>> Stashed changes
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/background.xml" value="0.284" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_email_icon.xml" value="0.1" />

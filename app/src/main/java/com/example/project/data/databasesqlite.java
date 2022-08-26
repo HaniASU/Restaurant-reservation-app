@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class databasesqlite extends SQLiteOpenHelper {
 
@@ -69,6 +70,14 @@ public class databasesqlite extends SQLiteOpenHelper {
             book_info.numberofpersons = numberofpersons;
             return "Your Reservation is " + c;
         }
+    }
+
+    public long delete_booking_info(String bookingnum)
+    {
+        SQLiteDatabase mydata =this.getWritableDatabase();
+
+        long v = mydata.delete("booking","booking_number = "+bookingnum,null);
+        return v;
     }
 
     public Boolean check_data(EditText email, EditText pass)
