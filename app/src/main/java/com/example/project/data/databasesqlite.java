@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.EditText;
 
 public class databasesqlite extends SQLiteOpenHelper {
+
     public static final String databaseName ="app.db";
 
     public databasesqlite(Context con)
@@ -17,7 +18,7 @@ public class databasesqlite extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase Database) {
         Database.execSQL("create table user (Id INTEGER primary key AUTOINCREMENT ,Name TEXT ,Phone INTEGER, District TEXT ,Email TEXT,Password TEXT ,Gender TEXT )");
-        Database.execSQL("create table booking_info (booking_number INTEGER primary key AUTOINCREMENT,NumberOfPersons INTEGER,DateOfBooking TEXT,UserId INTEGER)");
+        Database.execSQL("create table bookinginfo (booking_number INTEGER primary key AUTOINCREMENT,NumberOfPersons INTEGER,DateOfBooking TEXT,UserId INTEGER)");
 
     }
 
