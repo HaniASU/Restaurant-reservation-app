@@ -44,17 +44,10 @@ public class book extends AppCompatActivity {
             Toast.makeText(this, " Invaild data", Toast.LENGTH_LONG).show();
         }
         else {
-            long final_res = b.insert_booking_info(Integer.parseInt(NumberOfPersons) ,DateOfBooking ,UserId);
-            if (final_res == -1) {
-                Toast.makeText(this, " Invaild data", Toast.LENGTH_LONG).show();
-            }
-            else {
-                Toast.makeText( this, "Your Reservation is " +final_res, Toast.LENGTH_LONG).show();
+            String  final_res = b.insert_booking_info(Integer.parseInt(NumberOfPersons) ,DateOfBooking ,UserId);
+                Toast.makeText( this, final_res, Toast.LENGTH_LONG).show();
                 numberofpersons.getText().clear();
                 dateofbooking.getText().clear();
-            }
-
-
         }
     }
 }

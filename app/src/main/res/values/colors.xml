@@ -12,8 +12,5 @@
     <color name="hint">#39304d</color>
     <color name="button">#a17dff</color>
     <color name="honor">#F47458</color>
-
-
-
-
+    <color name="gray"> #808080</color>
 </resources>

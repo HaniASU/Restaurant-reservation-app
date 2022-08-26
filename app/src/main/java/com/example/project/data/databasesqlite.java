@@ -49,7 +49,7 @@ public class databasesqlite extends SQLiteOpenHelper {
             return "Data Saved";
     }
 
-    public long insert_booking_info(int numberofpersons, String dateofbooking, int userid)
+    public String insert_booking_info(int numberofpersons, String dateofbooking, int userid)
     {
         SQLiteDatabase bdata =this.getWritableDatabase();
         ContentValues content = new ContentValues();
@@ -59,8 +59,16 @@ public class databasesqlite extends SQLiteOpenHelper {
         content.put("UserId",userid);
 
         long c = bdata.insert("booking",null,content);
-
-        return c;
+        if(c ==-1)
+        {
+            return " Invaild data";
+        }
+        else {
+            book_info.booking_number = c;
+            book_info.dateofbooking = dateofbooking;
+            book_info.numberofpersons = numberofpersons;
+            return "Your Reservation is " + c;
+        }
     }
 
     public Boolean check_data(EditText email, EditText pass)
