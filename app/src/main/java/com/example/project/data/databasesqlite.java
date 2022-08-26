@@ -17,15 +17,17 @@ public class databasesqlite extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase Database) {
+        Database.execSQL("create table booking (booking_number INTEGER primary key AUTOINCREMENT,NumberOfPersons INTEGER,DateOfBooking TEXT,UserId INTEGER)");
         Database.execSQL("create table user (Id INTEGER primary key AUTOINCREMENT ,Name TEXT ,Phone INTEGER, District TEXT ,Email TEXT,Password TEXT ,Gender TEXT )");
-        Database.execSQL("create table booking_info (booking_number INTEGER primary key AUTOINCREMENT,NumberOfPersons INTEGER,DateOfBooking TEXT,UserId INTEGER)");
+
 
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase Database, int i, int i1) {
+        Database.execSQL("DROP TABLE IF EXISTS booking");
         Database.execSQL("DROP TABLE IF EXISTS user");
-        Database.execSQL("DROP TABLE IF EXISTS booking_info");
+
         onCreate(Database);
 
     }
@@ -47,21 +49,18 @@ public class databasesqlite extends SQLiteOpenHelper {
             return "Data Saved";
     }
 
-    public String insert_booking_info(int numberofpersons, String dateofbooking, int userid)
+    public long insert_booking_info(int numberofpersons, String dateofbooking, int userid)
     {
         SQLiteDatabase bdata =this.getWritableDatabase();
         ContentValues content = new ContentValues();
+
         content.put("NumberOfPersons",numberofpersons);
         content.put("DateOfBooking",dateofbooking);
         content.put("UserId",userid);
-        long c = bdata.insert("booking_info",null,content);
 
-        if (c == -1) {
-            return "Invaild data";
-        }
-        else {
-            return "Data Saved";
-        }
+        long c = bdata.insert("booking",null,content);
+
+        return c;
     }
 
     public Boolean check_data(EditText email, EditText pass)
