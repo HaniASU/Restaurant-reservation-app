@@ -17,6 +17,14 @@ public class Cancel extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cancel);
     }
+<<<<<<< Updated upstream
+=======
+    public void to_user(View view) {
+        Intent intent = new Intent(Cancel.this, MainActivity.class);
+        Cancel.this.finish();
+        startActivity(intent);
+    }
+>>>>>>> Stashed changes
 
     public void Cancel(View view){
         databasesqlite DB = new databasesqlite(this);

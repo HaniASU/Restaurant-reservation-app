@@ -68,16 +68,33 @@ public class databasesqlite extends SQLiteOpenHelper {
             book_info.booking_number = c;
             book_info.dateofbooking = dateofbooking;
             book_info.numberofpersons = numberofpersons;
-            return "Your Reservation is " + c;
+            return "Reservation Number : " + c;
         }
     }
 
+<<<<<<< Updated upstream
     public long delete_booking_info(String bookingnum)
     {
         SQLiteDatabase mydata =this.getWritableDatabase();
 
         long v = mydata.delete("booking","booking_number = "+bookingnum,null);
         return v;
+=======
+    public String update_Data(String name, int phone , String dis , String email, String pass, String gender) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("Name",name);
+        contentValues.put("Phone",phone);
+        contentValues.put("District",dis);
+        contentValues.put("Email",email);
+        contentValues.put("Password",pass);
+        contentValues.put("Gender",gender);
+        int flag = db.update("user", contentValues, "Id = ?",new String[] { String.valueOf(user_info.user.getInt(0)) });
+        if(flag == 1)
+            return "Data Updated";
+        else
+            return "Data Not Updated";
+>>>>>>> Stashed changes
     }
 
     public Boolean check_data(EditText email, EditText pass)
@@ -91,6 +108,7 @@ public class databasesqlite extends SQLiteOpenHelper {
         return false;
     }
 
+<<<<<<< Updated upstream
     public Boolean check_id(int id)
     {
         SQLiteDatabase database = this.getReadableDatabase();
@@ -103,3 +121,20 @@ public class databasesqlite extends SQLiteOpenHelper {
         return false;
     }
 }
+=======
+    public void select_data(int id)
+    {
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor cu = database.rawQuery("SELECT * FROM user WHERE Id = ?", new String[]{String.valueOf(id)});
+        if(cu.moveToFirst()) {
+            user_info.user = cu;
+        }
+    }
+
+    public Integer deleteData (int id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        return db.delete("user", "Id = ?",new String[] {String.valueOf(id)});
+    }
+
+}
+>>>>>>> Stashed changes

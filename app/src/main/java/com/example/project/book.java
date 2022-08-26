@@ -1,5 +1,6 @@
 package com.example.project;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -24,6 +25,7 @@ public class book extends AppCompatActivity {
 
     public void go_to_user(View view) {
         Intent intent = new Intent(book.this, MainActivity.class);
+        book.this.finish();
         startActivity(intent);
     }
 
@@ -46,8 +48,17 @@ public class book extends AppCompatActivity {
         else {
             String  final_res = b.insert_booking_info(Integer.parseInt(NumberOfPersons) ,DateOfBooking ,UserId);
                 Toast.makeText( this, final_res, Toast.LENGTH_LONG).show();
+                showMessage("Booking Information",final_res +"\n"+ "Number of Persons : "+NumberOfPersons +"\n" +"Date : " +DateOfBooking);
                 numberofpersons.getText().clear();
                 dateofbooking.getText().clear();
         }
+    }
+
+    public void showMessage(String title,String Message){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle(title);
+        builder.setMessage(Message);
+        builder.show();
     }
 }

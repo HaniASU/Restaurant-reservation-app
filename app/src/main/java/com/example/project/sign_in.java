@@ -47,6 +47,7 @@ public class sign_in extends AppCompatActivity {
             email_user.getText().clear();
             password_user.getText().clear();
             Intent intent = new Intent(sign_in.this, MainActivity.class);
+            sign_in.this.finish();
             startActivity(intent);
         }
     }

@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     {
         user_info.user.moveToFirst();
         Intent intent = new Intent(MainActivity.this, sign_in.class);
+        MainActivity.this.finish();
         startActivity(intent);
     }
     public void Display_all_Tables(View view)
@@ -31,11 +32,13 @@ public class MainActivity extends AppCompatActivity {
     public void to_profile(View view)
     {
         Intent intent = new Intent(MainActivity.this, profile.class);
+        MainActivity.this.finish();
         startActivity(intent);
     }
     public void to_booking(View view)
     {
         Intent intent = new Intent(MainActivity.this, book.class);
+        MainActivity.this.finish();
         startActivity(intent);
     }
 <<<<<<< Updated upstream
@@ -45,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
     {
 >>>>>>> Stashed changes
         Intent intent = new Intent(MainActivity.this, Cancel.class);
+        MainActivity.this.finish();
         startActivity(intent);
     }
 }

@@ -18,7 +18,10 @@
         <entry key="..\:/Users/HP Zbook/Documents/GitHub/Android/app/src/main/res/layout/display.xml" value="0.2234375" />
 >>>>>>> Stashed changes
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/back.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/background.xml" value="0.284" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/backtext.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_edit_off_icon.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_email_icon.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_id_icon.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_location_icon.xml" value="0.1" />
@@ -28,6 +31,8 @@
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/custom_phone_icon.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_baseline_child_care_24.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_edit_off.xml" value="0.1" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_edit_off_foucs.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_email.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_email_foucs.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_id.xml" value="0.1" />
@@ -45,6 +50,7 @@
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/drawable/ic_name_foucs.xml" value="0.1" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/layout/activity_book.xml" value="0.25" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/layout/activity_cancel.xml" value="0.33" />
+        <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/layout/activity_goodbye.xml" value="0.25625" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/layout/activity_profile.xml" value="0.33" />
         <entry key="..\:/Users/Hany/Desktop/Github/Project/Android/app/src/main/res/layout/activity_sign_in.xml" value="0.25625" />
