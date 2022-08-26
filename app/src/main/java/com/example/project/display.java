@@ -35,11 +35,11 @@ public class display extends AppCompatActivity{
         if (r == true)
         {
             String num =String.valueOf(user_info.c_display.getInt(0));
-            listAdapter.add(num);
+            listAdapter.add("Number of Reservation : "+num);
             String num_persons =String.valueOf(user_info.c_display.getInt(1));
-            listAdapter.add(num_persons);
+            listAdapter.add("Number of persons : "+num_persons);
             String date = user_info.c_display.getString(2);
-            listAdapter.add(date);
+            listAdapter.add("Date : " + date);
         }
         else
         {

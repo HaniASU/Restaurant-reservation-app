@@ -86,7 +86,8 @@ public class databasesqlite extends SQLiteOpenHelper {
     {
         SQLiteDatabase database = this.getReadableDatabase();
         Cursor c = database.rawQuery("SELECT * FROM booking WHERE UserId = ?",new String[]{String.valueOf(user_info.user.getInt(0))});
-        if(c.moveToFirst()) {
+        if(c.moveToFirst())
+        {
             user_info.c_display = c;
             return true;
         }
