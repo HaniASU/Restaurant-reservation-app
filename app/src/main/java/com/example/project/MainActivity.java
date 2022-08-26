@@ -13,7 +13,6 @@ import android.widget.RadioButton;
 import com.example.project.data.user_info;
 
 public class MainActivity extends AppCompatActivity {
-    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
     {
         user_info.user.moveToFirst();
         Intent intent = new Intent(MainActivity.this, sign_in.class);
+        startActivity(intent);
+    }
+    public void Display_all_Tables(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, display.class);
         startActivity(intent);
     }
     public void to_profile(View view)

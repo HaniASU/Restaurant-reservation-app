@@ -17,6 +17,9 @@
             android:name=".Cancel"
             android:exported="false" />
         <activity
+            android:name=".display"
+            android:exported="false" />
+        <activity
             android:name=".book"
             android:exported="false" />
         <activity
