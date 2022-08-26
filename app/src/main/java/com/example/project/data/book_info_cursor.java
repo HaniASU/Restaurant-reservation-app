@@ -1,6 +1,7 @@
 package com.example.project.data;
 
-public class book_info_cursor {
+public class book_info_cursor
+{
 
     private int booking_number, numberofpersons, userid;
     private String dateofbooking;
