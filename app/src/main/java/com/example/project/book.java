@@ -45,8 +45,8 @@ public class book extends AppCompatActivity {
         }
         else {
             String final_res = b.insert_booking_info(Integer.parseInt(NumberOfPersons) ,DateOfBooking ,Integer.parseInt(UserId));
-            Toast.makeText( this, "Book Successfully\n" + "And\n" + "Your Booking Number is " , Toast.LENGTH_LONG).show();
-//             + user_info.user.getString(0)
+            Toast.makeText( this, "Book Successfully\n" + "And\n" + "Your Booking Number is "+ user_info.book_info_cursor.getString(0), Toast.LENGTH_LONG).show();
+
             numberofpersons.getText().clear();
             dateofbooking.getText().clear();
 

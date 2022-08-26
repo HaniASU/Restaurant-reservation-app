@@ -6,5 +6,5 @@ public class user_info
 {
     public static Cursor user;
 
-//    public static Cursor booking_info;
+    public static Cursor book_info_cursor;
 }
