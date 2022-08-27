@@ -7,6 +7,29 @@
     android:background="@color/background"
     tools:context=".Cancel">
 
+    <EditText
+        android:id="@+id/cancel_num"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:background="@drawable/background"
+        android:drawableStart="@drawable/ic_baseline_edit_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Reservation Number you want to cancel"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:shadowColor="#1794E8"
+        android:textColor="@color/background"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="409dp"
@@ -19,37 +42,17 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/cancel_image" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="245dp"
-        android:layout_height="50dp"
-        android:text="Booking Number"
-        android:textColor="@color/teal_200"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:background="@drawable/background"
-        android:drawableStart="@drawable/custom_id_icon"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:hint="Enter Reservation Number"
-        android:inputType="number"
-
-        android:textColorHint="@color/gray"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.544" />
-      //android:textColor="@color/background"
+    //android:textColor="@color/background"
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="159dp"
-        android:layout_height="116dp"
+        android:layout_width="164dp"
+        android:layout_height="64dp"
+        android:background="@color/honor"
         android:onClick="Cancel"
         android:text="Cancel"
         android:textSize="24sp"
+        app:backgroundTint="@color/honor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -57,20 +60,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.785" />
 
-    <EditText
-        android:id="@+id/BookNum"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:background="@color/white"
-        android:drawableStart="@drawable/ic_baseline_edit_24"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:textColor="@color/black"
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="346dp"
+        android:layout_height="58dp"
+        android:padding="10dp"
+        android:text="Cancellation"
+        android:textColor="@color/honor"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.544" />
+        app:layout_constraintVertical_bias="0.465" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

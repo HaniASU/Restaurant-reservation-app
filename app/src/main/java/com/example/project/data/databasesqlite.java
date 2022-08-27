@@ -73,11 +73,9 @@ public class databasesqlite extends SQLiteOpenHelper {
     }
 
 
-    public long delete_booking_info(String bookingnum) {
+    public long delete_booking_info(int bookingnum) {
         SQLiteDatabase mydata = this.getWritableDatabase();
-
-        long v = mydata.delete("booking", "booking_number = " + bookingnum, null);
-        return v;
+        return mydata.delete("booking", "booking_number = ?",new String[] {String.valueOf(bookingnum)});
     }
 
 

@@ -28,14 +28,15 @@ public class Cancel extends AppCompatActivity {
 
     public void Cancel(View view){
         databasesqlite DB = new databasesqlite(this);
-        EditText bnumtext = (EditText)findViewById(R.id.BookNum);
+        EditText bnumtext = (EditText) findViewById(R.id.cancel_num);
         String bookingnum = bnumtext.toString();
+        int bnumint = Integer.parseInt(bookingnum);
 
         if(bookingnum.isEmpty()){
             Toast.makeText(this,"Please Enter Booking Number !",Toast.LENGTH_LONG);
         }
         else{
-            if(DB.delete_booking_info(bookingnum)==-1){
+            if(DB.delete_booking_info(bnumint)==-1){
                 Toast.makeText(this,"The Number you inserted was not found !",Toast.LENGTH_LONG);
             }
             else{
