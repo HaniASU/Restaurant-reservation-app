@@ -73,9 +73,21 @@ public class databasesqlite extends SQLiteOpenHelper {
     }
 
 
-    public long delete_booking_info(int bookingnum) {
+    public long delete_booking_info(String bookingnum) {
         SQLiteDatabase mydata = this.getWritableDatabase();
-        return mydata.delete("booking", "booking_number = ?",new String[] {String.valueOf(bookingnum)});
+        if(!(check_booking_num(bookingnum)))
+            return -1;
+        return mydata.delete("booking", "booking_number = ?",new String[] {bookingnum});
+    }
+
+    public boolean check_booking_num(String bookingnum){
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor cu = database.rawQuery("SELECT * FROM booking WHERE booking_number = ?", new String[]{bookingnum});
+        if(cu.moveToFirst()) {
+            user_info.user = cu;
+            return true;
+        }
+        return false;
     }
 
 

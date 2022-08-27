@@ -81,19 +81,19 @@
         app:layout_constraintVertical_bias="0.859" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imageButton5"
         android:layout_width="44dp"
         android:layout_height="42dp"
         android:background="@color/background"
         android:onClick="go_to_user"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.462"
+        app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@android:drawable/ic_menu_revert"
-        app:tint="@color/honor"
+        app:tint="@color/white"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <ImageView

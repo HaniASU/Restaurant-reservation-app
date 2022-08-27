@@ -98,14 +98,14 @@ public class profile extends AppCompatActivity {
         databasesqlite dt = new databasesqlite(this);
         int r = dt.deleteData(user_info.user.getInt(0));
         if (r >0) {
-            Toast.makeText(this, "Data Deleted", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Account Deleted !", Toast.LENGTH_LONG).show();
             user_info.user.moveToFirst();
             Intent intent = new Intent(profile.this, Goodbye.class);
             profile.this.finish();
             startActivity(intent);
         }
         else {
-            Toast.makeText(this, "Data Not Deleted", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Failed to delete Account !", Toast.LENGTH_LONG).show();
 
         }
     }

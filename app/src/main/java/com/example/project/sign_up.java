@@ -67,6 +67,9 @@ public class sign_up extends AppCompatActivity {
             password.getText().clear();
             male.setChecked(false);
             female.setChecked(false);
+            Intent intent = new Intent(sign_up.this, sign_in.class);
+            sign_up.this.finish();
+            startActivity(intent);
         }
     }
 

@@ -21,14 +21,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.057"
         app:srcCompat="@android:drawable/ic_menu_revert"
-        tools:ignore="OnClick"
-        app:tint="@color/honor" />
+        app:tint="@color/white"
+        tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Creat Account"
+        android:text="Create Account"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please fill the input blow here"
-        android:textColor="#70FFFFFF"
+        android:textColor="@color/honor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.289"
@@ -171,7 +171,7 @@
         android:layout_width="131dp"
         android:layout_height="57dp"
         android:onClick="save_data"
-        android:text="Save"
+        android:text="Sign Up"
         android:textColor="@color/white"
         android:textSize="18dp"
         app:backgroundTint="@color/honor"
