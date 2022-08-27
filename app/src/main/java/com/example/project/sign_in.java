@@ -16,17 +16,12 @@ import com.example.project.data.user_info;
 
 public class sign_in extends AppCompatActivity {
 
-    int counter = 0;
-    @Override
     public void onBackPressed() {
-        if(counter == 0){
-        Toast.makeText(this,"Press again to Exit",Toast.LENGTH_SHORT).show();
-        }
-        counter++;
-        if(counter == 2) {
-            super.onBackPressed();
-        }
+        Intent intent = new Intent(sign_in.this, Start.class);
+        sign_in.this.finish();
+        startActivity(intent);
     }
+
 
 
     @Override

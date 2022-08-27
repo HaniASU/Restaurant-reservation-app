@@ -3,9 +3,11 @@ package com.example.project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.widget.ImageButton;
 
 import com.example.project.data.user_info;
 
@@ -23,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
+
+        ImageButton Ib = (ImageButton) findViewById(R.id.profile);
+
+        if(user_info.user.getString(6).equals("Male")) {
+            Ib.setImageResource(R.drawable.male);
+        }
+        else
+            Ib.setImageResource(R.drawable.female);
     }
     public void log_out(View view)
     {

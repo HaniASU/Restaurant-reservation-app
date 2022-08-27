@@ -81,6 +81,9 @@ public class profile extends AppCompatActivity {
         String Email = em.getText().toString();
         String Password = pass.getText().toString();
 
+        String Valid_email = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+        String text = "[a-zA-Z0-9._-]+";
+
         if (mal.isChecked())
             gender = mal.getText().toString();
         else
@@ -91,11 +94,16 @@ public class profile extends AppCompatActivity {
         {
             Toast.makeText(this, "Invaild data", Toast.LENGTH_LONG).show();
         }
-        else
+
+        else if (Email.matches(Valid_email) && Name.matches(text) && District.matches(text))
         {
             String result = dt.update_Data(Name, Integer.parseInt(Phone), District, Email, Password, gender);
             Toast.makeText(this, result, Toast.LENGTH_LONG).show();
             dt.select_data(user_info.user.getInt(0));
+        }
+        else
+        {
+            Toast.makeText(this, "Please enter correct data", Toast.LENGTH_LONG).show();
         }
     }
     public void delete(View view)

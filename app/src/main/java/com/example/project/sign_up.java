@@ -60,11 +60,15 @@ public class sign_up extends AppCompatActivity {
         String Email = email.getText().toString();
         String Password = password.getText().toString();
 
+        String Valid_email = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+        String text = "[a-zA-Z0-9._-]+";
+
         if (Name.isEmpty()|| Phone.isEmpty() ||Password.isEmpty() || District.isEmpty() || Email.isEmpty() || gender =="")
         {
             Toast.makeText(this, "Invaild data", Toast.LENGTH_LONG).show();
         }
-        else {
+        else if (Email.matches(Valid_email) && Name.matches(text) && District.matches(text))
+        {
             String result = dt.insert_data(Name, Integer.parseInt(Phone), District, Email, Password, gender);
             Toast.makeText(this, result, Toast.LENGTH_LONG).show();
 
@@ -79,6 +83,8 @@ public class sign_up extends AppCompatActivity {
             sign_up.this.finish();
             startActivity(intent);
         }
+        else {
+            Toast.makeText(this, "Please enter correct data", Toast.LENGTH_LONG).show();
+        }
     }
-
 }
