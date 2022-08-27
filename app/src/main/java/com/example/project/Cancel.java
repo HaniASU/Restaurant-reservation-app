@@ -38,9 +38,11 @@ public class Cancel extends AppCompatActivity {
         else{
             if(d.delete_booking_info(bookingnum)==-1){
                 Toast.makeText(this,"The Number you inserted was not found !",Toast.LENGTH_LONG).show();
+                bnumtext.getText().clear();
             }
             else{
                 Toast.makeText(this,"Succefully Cancelled !",Toast.LENGTH_LONG).show();
+                bnumtext.getText().clear();
             }
         }
     }
