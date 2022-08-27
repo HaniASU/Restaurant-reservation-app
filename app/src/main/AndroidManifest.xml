@@ -14,17 +14,13 @@
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
         <activity
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
             android:name=".display"
-=======
-=======
+            android:exported="false" />
+        <activity
             android:name=".Goodbye"
             android:exported="false" />
         <activity
->>>>>>> Stashed changes
             android:name=".Cancel"
->>>>>>> Stashed changes
             android:exported="false" />
         <activity
             android:name=".book"

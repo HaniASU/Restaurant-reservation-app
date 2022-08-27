@@ -72,14 +72,15 @@ public class databasesqlite extends SQLiteOpenHelper {
         }
     }
 
-<<<<<<< Updated upstream
-    public long delete_booking_info(String bookingnum)
-    {
-        SQLiteDatabase mydata =this.getWritableDatabase();
 
-        long v = mydata.delete("booking","booking_number = "+bookingnum,null);
+    public long delete_booking_info(String bookingnum) {
+        SQLiteDatabase mydata = this.getWritableDatabase();
+
+        long v = mydata.delete("booking", "booking_number = " + bookingnum, null);
         return v;
-=======
+    }
+
+
     public String update_Data(String name, int phone , String dis , String email, String pass, String gender) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -94,7 +95,6 @@ public class databasesqlite extends SQLiteOpenHelper {
             return "Data Updated";
         else
             return "Data Not Updated";
->>>>>>> Stashed changes
     }
 
     public Boolean check_data(EditText email, EditText pass)
@@ -108,7 +108,6 @@ public class databasesqlite extends SQLiteOpenHelper {
         return false;
     }
 
-<<<<<<< Updated upstream
     public Boolean check_id(int id)
     {
         SQLiteDatabase database = this.getReadableDatabase();
@@ -120,8 +119,8 @@ public class databasesqlite extends SQLiteOpenHelper {
         }
         return false;
     }
-}
-=======
+
+
     public void select_data(int id)
     {
         SQLiteDatabase database = this.getReadableDatabase();
@@ -137,4 +136,4 @@ public class databasesqlite extends SQLiteOpenHelper {
     }
 
 }
->>>>>>> Stashed changes
+

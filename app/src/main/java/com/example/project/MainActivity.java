@@ -41,12 +41,9 @@ public class MainActivity extends AppCompatActivity {
         MainActivity.this.finish();
         startActivity(intent);
     }
-<<<<<<< Updated upstream
-    public void to_cancel(View view) {
-=======
+
     public void to_cancelling(View view)
     {
->>>>>>> Stashed changes
         Intent intent = new Intent(MainActivity.this, Cancel.class);
         MainActivity.this.finish();
         startActivity(intent);
