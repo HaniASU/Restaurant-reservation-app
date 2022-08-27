@@ -32,14 +32,39 @@ public class display extends AppCompatActivity{
         int id = user_info.user.getInt(0);
         boolean r = dbs.check_id(id);
 
+        Button next = (Button) findViewById(R.id.next);
+        Button previous = (Button) findViewById(R.id.previous);
+
         if (r == true)
         {
-            String num =String.valueOf(user_info.c_display.getInt(0));
-            listAdapter.add("Number of Reservation : "+num);
-            String num_persons =String.valueOf(user_info.c_display.getInt(1));
-            listAdapter.add("Number of persons : "+num_persons);
-            String date = user_info.c_display.getString(2);
-            listAdapter.add("Date : " + date);
+            displayer(listAdapter);
+            next.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(android.view.View view) {
+                    listAdapter.clear();
+                    if(!user_info.c_display.isLast()){
+                        user_info.c_display.moveToNext();
+                    }
+                    else{
+                        user_info.c_display.moveToFirst();
+                    }
+                    displayer(listAdapter);
+                }
+            });
+            previous.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(android.view.View view) {
+                    listAdapter.clear();
+                    if(!user_info.c_display.isFirst()){
+                        user_info.c_display.moveToPrevious();
+                    }
+                    else{
+                        user_info.c_display.moveToLast();
+                    }
+                    displayer(listAdapter);
+                }
+            });
+
         }
         else
         {
@@ -51,6 +76,16 @@ public class display extends AppCompatActivity{
     {
         Intent intent = new Intent(display.this, MainActivity.class);
         startActivity(intent);
+    }
+
+    public void displayer(ArrayAdapter<String> listAdapter)
+    {
+        String num =String.valueOf(user_info.c_display.getInt(0));
+        listAdapter.add("Number of Reservation : "+num);
+        String num_persons =String.valueOf(user_info.c_display.getInt(1));
+        listAdapter.add("Number of persons : "+num_persons);
+        String date = user_info.c_display.getString(2);
+        listAdapter.add("Date : " + date);
     }
 
 }

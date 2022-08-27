@@ -42,14 +42,14 @@
 
     <ListView
         android:id="@+id/lview"
-        android:layout_width="396dp"
-        android:layout_height="365dp"
+        android:layout_width="401dp"
+        android:layout_height="238dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.834" />
+        app:layout_constraintVertical_bias="0.632" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -62,5 +62,35 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/reservationlist" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:backgroundTint="@color/honor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Previous"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:backgroundTint="@color/honor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
