@@ -105,7 +105,7 @@
         android:drawableStart="@drawable/custom_email_icon"
         android:drawablePadding="5dp"
         android:ems="10"
-        android:hint="E-mail"
+        android:hint="E-mail ex : name@gmail.com"
         android:inputType="textEmailAddress"
         android:paddingLeft="10dp"
         android:paddingRight="20dp"

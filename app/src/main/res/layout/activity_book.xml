@@ -86,6 +86,7 @@
         android:layout_height="42dp"
         android:background="@color/background"
         android:onClick="go_to_user"
+        android:tint="@color/honor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.084"
@@ -93,14 +94,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@android:drawable/ic_menu_revert"
-        app:tint="@color/white"
+        app:tint="@color/honor"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="431dp"
         android:layout_height="421dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toTopOf="@+id/bookpage_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
