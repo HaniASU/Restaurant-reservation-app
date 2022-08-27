@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -90,8 +91,10 @@ public class display extends AppCompatActivity{
     public void to_main(View view)
     {
         Intent intent = new Intent(display.this, MainActivity.class);
+        display.this.finish();
         startActivity(intent);
     }
+
 
     public void displayer(ArrayAdapter<String> listAdapter)
     {

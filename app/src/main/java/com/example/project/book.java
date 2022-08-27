@@ -13,6 +13,8 @@ import android.widget.Toast;
 import com.example.project.data.databasesqlite;
 import com.example.project.data.user_info;
 
+import java.text.ParseException;
+
 public class book extends AppCompatActivity {
 
     @Override
@@ -36,8 +38,7 @@ public class book extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void save_info(View view)
-    {
+    public void save_info(View view) throws ParseException {
         databasesqlite b= new databasesqlite(this);
 
         EditText numberofpersons = (EditText) findViewById(R.id.num_of_persons);
@@ -47,18 +48,47 @@ public class book extends AppCompatActivity {
         String NumberOfPersons = numberofpersons.getText().toString();
         String DateOfBooking = dateofbooking.getText().toString();
 
+        DateStringConverter dsc = new DateStringConverter();
 
-        if ( NumberOfPersons.isEmpty() ||DateOfBooking.isEmpty() )
+        if(!DateOfBooking.isEmpty())
         {
-            Toast.makeText(this, " Invaild data", Toast.LENGTH_LONG).show();
+            if((DateOfBooking.length() < 8) || (((DateOfBooking.charAt(2) != '-')&&(DateOfBooking.charAt(5) != '-')) &&
+               ((DateOfBooking.charAt(1) != '-')&&(DateOfBooking.charAt(4) != '-')))||
+               (DateOfBooking.length() > 10) || (Counter(DateOfBooking) > 2))
+            {
+                Toast.makeText(this, "Invalid Pattern of Date", Toast.LENGTH_LONG).show();
+                if(NumberOfPersons.isEmpty())
+                    Toast.makeText(this, "Please Complete Reservation requirments", Toast.LENGTH_LONG).show();
+                return;
+            }
+            if(!dsc.checkdate(DateOfBooking))
+            {
+                Toast.makeText(this, "Old Date", Toast.LENGTH_LONG).show();
+                return;
+            }
         }
-        else {
+
+        if(!NumberOfPersons.isEmpty())
+        {
+            if(Integer.parseInt(NumberOfPersons) > 10 || Integer.parseInt(NumberOfPersons) <= 0)
+            {
+                Toast.makeText(this, "Invalid number of seats (Max is 10)", Toast.LENGTH_LONG).show();
+                return;
+            }
+        }
+        if (NumberOfPersons.isEmpty() || DateOfBooking.isEmpty())
+        {
+            Toast.makeText(this, "Please Complete Reservation requirments", Toast.LENGTH_LONG).show();
+            return;
+        }
+        else{
             String  final_res = b.insert_booking_info(Integer.parseInt(NumberOfPersons) ,DateOfBooking ,UserId);
-                Toast.makeText( this, final_res, Toast.LENGTH_LONG).show();
-                showMessage("Booking Information",final_res +"\n"+ "Number of Persons : "+NumberOfPersons +"\n" +"Date : " +DateOfBooking);
-                numberofpersons.getText().clear();
-                dateofbooking.getText().clear();
+            Toast.makeText( this, final_res, Toast.LENGTH_LONG).show();
+            showMessage("Booking Information",final_res +"\n"+ "Number of Persons : "+NumberOfPersons +"\n" +"Date : " +DateOfBooking);
+            numberofpersons.getText().clear();
+            dateofbooking.getText().clear();
         }
+
     }
 
     public void showMessage(String title,String Message){
@@ -67,5 +97,11 @@ public class book extends AppCompatActivity {
         builder.setTitle(title);
         builder.setMessage(Message);
         builder.show();
+    }
+
+    public int Counter(String s){
+        int total = s.length();
+        int removed = s.replace("-","").length();
+        return total-removed;
     }
 }
