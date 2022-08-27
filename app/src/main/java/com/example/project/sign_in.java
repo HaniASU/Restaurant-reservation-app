@@ -16,6 +16,19 @@ import com.example.project.data.user_info;
 
 public class sign_in extends AppCompatActivity {
 
+    int counter = 0;
+    @Override
+    public void onBackPressed() {
+        if(counter == 0){
+        Toast.makeText(this,"Press again to Exit",Toast.LENGTH_SHORT).show();
+        }
+        counter++;
+        if(counter == 2) {
+            super.onBackPressed();
+        }
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +39,7 @@ public class sign_in extends AppCompatActivity {
 
     public void go_to_signup(View view) {
         Intent intent = new Intent(sign_in.this, sign_up.class);
+        sign_in.this.finish();
         startActivity(intent);
     }
 
@@ -43,7 +57,7 @@ public class sign_in extends AppCompatActivity {
         }
         else
         {
-            Toast.makeText(this, "Login Successfully! Welcome " + user_info.user.getString(1), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Login Successfully! Welcome Mr/" + user_info.user.getString(1), Toast.LENGTH_SHORT).show();
             email_user.getText().clear();
             password_user.getText().clear();
             Intent intent = new Intent(sign_in.this, MainActivity.class);

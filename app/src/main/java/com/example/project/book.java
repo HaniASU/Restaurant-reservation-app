@@ -16,6 +16,13 @@ import com.example.project.data.user_info;
 public class book extends AppCompatActivity {
 
     @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(book.this, MainActivity.class);
+        book.this.finish();
+        startActivity(intent);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);

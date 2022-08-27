@@ -15,6 +15,14 @@ import com.example.project.data.databasesqlite;
 public class sign_up extends AppCompatActivity {
 
     @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(sign_up.this, sign_in.class);
+        sign_up.this.finish();
+        startActivity(intent);
+    }
+
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);

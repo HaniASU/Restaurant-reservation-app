@@ -2,11 +2,20 @@ package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 
 public class Goodbye extends AppCompatActivity {
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Goodbye.this, sign_in.class);
+        Goodbye.this.finish();
+        startActivity(intent);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

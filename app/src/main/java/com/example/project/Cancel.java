@@ -14,6 +14,14 @@ import com.example.project.data.databasesqlite;
 public class Cancel extends AppCompatActivity {
 
     @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Cancel.this, MainActivity.class);
+        Cancel.this.finish();
+        startActivity(intent);
+    }
+
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cancel);
@@ -33,7 +41,7 @@ public class Cancel extends AppCompatActivity {
 
 
         if(bookingnum.isEmpty()){
-            Toast.makeText(this,"Please Enter Booking Number !",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Please Enter Reservation Number !",Toast.LENGTH_LONG).show();
         }
         else{
             if(d.delete_booking_info(bookingnum)==-1){

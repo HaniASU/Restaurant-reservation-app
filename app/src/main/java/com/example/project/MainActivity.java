@@ -11,6 +11,13 @@ import com.example.project.data.user_info;
 
 public class MainActivity extends AppCompatActivity {
     @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(MainActivity.this, sign_in.class);
+        MainActivity.this.finish();
+        startActivity(intent);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -27,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public void Display_all_Tables(View view)
     {
         Intent intent = new Intent(MainActivity.this, display.class);
+        MainActivity.this.finish();
         startActivity(intent);
     }
     public void to_profile(View view)

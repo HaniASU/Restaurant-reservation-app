@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,6 +17,13 @@ import com.example.project.data.databasesqlite;
 import com.example.project.data.user_info;
 
 public class display extends AppCompatActivity{
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(display.this, MainActivity.class);
+        display.this.finish();
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +42,9 @@ public class display extends AppCompatActivity{
 
         Button next = (Button) findViewById(R.id.next);
         Button previous = (Button) findViewById(R.id.previous);
+
+        ImageView reserveimage = (ImageView)findViewById(R.id.reservation);
+        ImageView errorimage = (ImageView) findViewById(R.id.errorimage);
 
         if (r == true)
         {
@@ -68,6 +79,10 @@ public class display extends AppCompatActivity{
         }
         else
         {
+            reserveimage.setVisibility(View.INVISIBLE);
+            errorimage.setVisibility(View.VISIBLE);
+            next.setVisibility(View.INVISIBLE);
+            previous.setVisibility(View.INVISIBLE);
             Toast.makeText(this, "you don't have Reservations", Toast.LENGTH_SHORT).show();
         }
     }
