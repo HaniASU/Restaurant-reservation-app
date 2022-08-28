@@ -2,17 +2,14 @@ package com.example.project;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.example.project.data.databasesqlite;
 import com.example.project.data.user_info;
-
 import java.text.ParseException;
 
 public class book extends AppCompatActivity {
@@ -96,7 +93,7 @@ public class book extends AppCompatActivity {
         else{
             String  final_res = b.insert_booking_info(Integer.parseInt(NumberOfPersons) ,DateOfBooking ,UserId);
             Toast.makeText( this, final_res, Toast.LENGTH_LONG).show();
-            showMessage("Booking Number",final_res +"\n"+ "Number of Persons : "+NumberOfPersons +"\n" +"Date Of Booking : " +DateOfBooking);
+            showMessage("Booking Information",final_res +"\n"+ "Number of Persons : "+NumberOfPersons +"\n" +"Date Of Booking : " +DateOfBooking);
             numberofpersons.getText().clear();
             dateofbooking.getText().clear();
         }

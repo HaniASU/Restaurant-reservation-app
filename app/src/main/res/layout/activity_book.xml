@@ -87,7 +87,6 @@
         android:layout_height="42dp"
         android:background="@color/background"
         android:onClick="go_to_user"
-        android:tint="@color/honor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.084"
