@@ -67,7 +67,7 @@ public class databasesqlite extends SQLiteOpenHelper {
             book_info.booking_number = c;
             book_info.dateofbooking = dateofbooking;
             book_info.numberofpersons = numberofpersons;
-            return "Reservation Number : " + c;
+            return "Booking Number : " + c;
         }
     }
 
