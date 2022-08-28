@@ -90,13 +90,13 @@ public class book extends AppCompatActivity {
         }
         if (NumberOfPersons.isEmpty() || DateOfBooking.isEmpty())
         {
-            Toast.makeText(this, "Please Complete Reservation requirments", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please Complete Booking Requirements", Toast.LENGTH_LONG).show();
             return;
         }
         else{
             String  final_res = b.insert_booking_info(Integer.parseInt(NumberOfPersons) ,DateOfBooking ,UserId);
             Toast.makeText( this, final_res, Toast.LENGTH_LONG).show();
-            showMessage("Booking Information",final_res +"\n"+ "Number of Persons : "+NumberOfPersons +"\n" +"Date : " +DateOfBooking);
+            showMessage("Booking Number",final_res +"\n"+ "Number of Persons : "+NumberOfPersons +"\n" +"Date Of Booking : " +DateOfBooking);
             numberofpersons.getText().clear();
             dateofbooking.getText().clear();
         }
