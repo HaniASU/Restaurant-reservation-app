@@ -84,7 +84,7 @@ public class book extends AppCompatActivity {
         {
             if(Integer.parseInt(NumberOfPersons) > 10 || Integer.parseInt(NumberOfPersons) <= 0)
             {
-                Toast.makeText(this, "Invalid number of seats (Max is 10)", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Invalid number of Persons (Max is 10)", Toast.LENGTH_LONG).show();
                 return;
             }
         }
