@@ -7,6 +7,23 @@
     android:background="@color/background"
     tools:context=".Cancel">
 
+    <Button
+        android:id="@+id/book_button2"
+        android:layout_width="163dp"
+        android:layout_height="64dp"
+        android:onClick="cancel"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/honor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859" />
+
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="44dp"
@@ -59,24 +76,6 @@
         app:srcCompat="@drawable/cancel_image" />
 
     //android:textColor="@color/background"
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="164dp"
-        android:layout_height="64dp"
-        android:background="@color/honor"
-        android:onClick="Cancel"
-        android:text="Cancel"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:backgroundTint="@color/honor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.785" />
 
     <TextView
         android:id="@+id/textView8"
