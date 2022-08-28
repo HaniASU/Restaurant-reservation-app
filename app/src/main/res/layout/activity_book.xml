@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/bookpage_title"
-        android:layout_width="295dp"
-        android:layout_height="41dp"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
         android:text="Reservation Requirments"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/honor"
@@ -18,7 +18,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.559" />
@@ -31,7 +31,7 @@
         android:drawableLeft="@drawable/custom_name_icon"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Number Of Seats"
+        android:hint="Number Of Persons"
         android:inputType="number"
         android:textColor="@color/background"
         android:textColorHint="@color/gray"
@@ -52,7 +52,7 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Date Of Reservation : dd-mm-yyyy"
-        android:inputType="date"
+        android:inputType="text"
         android:textColor="@color/background"
         android:textColorHint="@color/gray"
         android:textSize="16sp"

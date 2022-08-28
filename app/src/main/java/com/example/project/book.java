@@ -47,20 +47,32 @@ public class book extends AppCompatActivity {
 
         String NumberOfPersons = numberofpersons.getText().toString();
         String DateOfBooking = dateofbooking.getText().toString();
+        String Valid_day = "";
+        String Valid_month = "";
 
         DateStringConverter dsc = new DateStringConverter();
 
         if(!DateOfBooking.isEmpty())
         {
-            if((DateOfBooking.length() < 8) || (((DateOfBooking.charAt(2) != '-')&&(DateOfBooking.charAt(5) != '-')) &&
-               ((DateOfBooking.charAt(1) != '-')&&(DateOfBooking.charAt(4) != '-')))||
-               (DateOfBooking.length() > 10) || (Counter(DateOfBooking) > 2))
-            {
-                Toast.makeText(this, "Invalid Pattern of Date", Toast.LENGTH_LONG).show();
-                if(NumberOfPersons.isEmpty())
-                    Toast.makeText(this, "Please Complete Reservation requirments", Toast.LENGTH_LONG).show();
-                return;
+            try {
+                Valid_day = Character.toString(DateOfBooking.charAt(0)) + Character.toString(DateOfBooking.charAt(1));
+                Valid_month = Character.toString(DateOfBooking.charAt(3)) + Character.toString(DateOfBooking.charAt(4));
+                if((DateOfBooking.length() < 8) || (((DateOfBooking.charAt(2) != '-')&&(DateOfBooking.charAt(5) != '-')) &&
+                        ((DateOfBooking.charAt(1) != '-')&&(DateOfBooking.charAt(4) != '-')))||
+                        (DateOfBooking.length() > 10) || (Counter(DateOfBooking) > 2) || (Integer.parseInt(Valid_day) > 31 || Integer.parseInt(Valid_month) > 12))
+                {
+                    Toast.makeText(this, "Invalid Pattern of Date", Toast.LENGTH_LONG).show();
+                    if(NumberOfPersons.isEmpty())
+                        Toast.makeText(this, "Please Complete Reservation requirments", Toast.LENGTH_LONG).show();
+                    return;
+                }
             }
+            catch(Exception e) {
+                Toast.makeText(this, "Invalid Pattern of Date", Toast.LENGTH_LONG).show();
+                return;
+
+        }
+
             if(!dsc.checkdate(DateOfBooking))
             {
                 Toast.makeText(this, "Old Date", Toast.LENGTH_LONG).show();
