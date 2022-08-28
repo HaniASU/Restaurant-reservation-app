@@ -96,7 +96,7 @@ public class book extends AppCompatActivity {
         else{
             String  final_res = b.insert_booking_info(Integer.parseInt(NumberOfPersons) ,DateOfBooking ,UserId);
             Toast.makeText( this, final_res, Toast.LENGTH_LONG).show();
-            showMessage("Booking Number",final_res +"\n"+ "Number of Persons : "+NumberOfPersons +"\n" +"Date Of Booking : " +DateOfBooking);
+            showMessage("Booking Information",final_res +"\n"+ "Number of Persons : "+NumberOfPersons +"\n" +"Date Of Booking : " +DateOfBooking);
             numberofpersons.getText().clear();
             dateofbooking.getText().clear();
         }
