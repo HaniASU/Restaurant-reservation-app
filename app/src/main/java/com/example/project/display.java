@@ -6,14 +6,10 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.project.data.databasesqlite;
 import com.example.project.data.user_info;
 
@@ -99,7 +95,7 @@ public class display extends AppCompatActivity{
     public void displayer(ArrayAdapter<String> listAdapter)
     {
         String num =String.valueOf(user_info.c_display.getInt(0));
-        listAdapter.add("Number of Reservation : "+num);
+        listAdapter.add("Booking Number :  "+num);
         String num_persons =String.valueOf(user_info.c_display.getInt(1));
         listAdapter.add("Number of persons : "+num_persons);
         String date = user_info.c_display.getString(2);

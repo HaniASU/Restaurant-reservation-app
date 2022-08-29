@@ -2,17 +2,14 @@ package com.example.project;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.example.project.data.databasesqlite;
 import com.example.project.data.user_info;
-
 import java.text.ParseException;
 
 public class book extends AppCompatActivity {
